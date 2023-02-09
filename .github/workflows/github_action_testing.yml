@@ -1,0 +1,19 @@
+name: Github action testing
+run-name: ${{ github.actor }} is testing
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-last
+    name: build and sync artifact
+    steps:
+      - name: Install openssh
+        run: sudo apt install -y openssh-client
+
+      - name: Install result
+        run: echo `Install success`
+
+
