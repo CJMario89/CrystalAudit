@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar";
 import Request from "../components/Request";
 import Three from "../components/Three";
 
-const index = () => {
+const Index = () => {
   const threeRef = useRef(null);
   const [onPage, setOnPage] = useState("main");
   const pages = [
@@ -43,4 +43,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
